@@ -1,0 +1,18 @@
+ //Creates the service with nodejs
+ sls create --template aws-nodejs --path nodejs-example
+ 
+ //Gives you logs
+ sls logs -f hello -t
+
+
+//Deploys a single function
+  sls deploy function -f hello
+
+//Tests a single function on our machine
+sls invoke -f hello -l
+
+//Deploys the whole project?
+sls deploy -v
+
+//removes everything
+sls remove
